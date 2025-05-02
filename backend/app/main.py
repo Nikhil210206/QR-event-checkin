@@ -7,7 +7,15 @@ from app.database import Base, engine
 # Create database tables
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI()
+app = FastAPI(
+    title="QR-Based Event Check-In System",
+    description="API documentation for the QR-based event check-in system.",
+    version="1.0.0",
+    contact={
+        "name": "Support Team",
+        "email": "support@example.com",
+    },
+)
 
 # Register routers
 app.include_router(auth_router, prefix="/auth", tags=["Auth"])
