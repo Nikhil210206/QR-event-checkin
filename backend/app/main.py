@@ -17,6 +17,10 @@ app = FastAPI(
     },
 )
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello, World!"}
+
 # Register routers
 app.include_router(auth_router, prefix="/auth", tags=["Auth"])
 app.include_router(events_router, prefix="/events", tags=["Events"])
