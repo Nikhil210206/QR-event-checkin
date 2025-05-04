@@ -30,6 +30,10 @@ Framework: React.js
 Routing: React Router
 HTTP Client: Axios
 
+<img width="1470" alt="Screenshot 2025-05-04 at 11 27 58 AM" src="https://github.com/user-attachments/assets/826cd24d-768d-4e2f-8084-a712eaac7317" />
+
+<img width="1470" alt="Screenshot 2025-05-04 at 11 28 14 AM" src="https://github.com/user-attachments/assets/436d7ef5-d4ea-46f9-9377-d67af58b3459" />
+
 Project Structure
 Backend:
 backend/
