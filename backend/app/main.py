@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-from app.auth.routes import router as auth_router
-from app.events.routes import router as events_router
-from app.admin.routes import router as admin_router
-from app.database import Base, engine
+from auth.routes import router as auth_router
+from events.routes import router as events_router
+from admin.routes import router as admin_router
+from database import Base, engine
 
 # Create database tables
 Base.metadata.create_all(bind=engine)

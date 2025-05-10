@@ -4,7 +4,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 import base64
-from app.database import settings
+from database import settings
 
 def send_email(to_email: str, subject: str, body: str, qr_code_base64: str):
     # Email configuration

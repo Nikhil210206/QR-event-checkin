@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from app.database import get_db
-from app.models import Event, EventRegistration
+from database import get_db
+from models import Event, EventRegistration
 from typing import List
 import csv
 import json

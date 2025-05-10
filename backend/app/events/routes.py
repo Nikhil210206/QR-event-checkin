@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from app.database import get_db
-from app.models import Event, EventRegistration, User
-from app.schemas import EventCreate
-from app.utils.qr_generator import generate_qr_code
-from app.utils.email_sender import send_email
+from database import get_db
+from models import Event, EventRegistration, User
+from schemas import EventCreate
+from utils.qr_generator import generate_qr_code
+from utils.email_sender import send_email
 from datetime import datetime
 from typing import List
 
